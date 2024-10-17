@@ -22,7 +22,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({
     children,
-    className
+    className,
 }) => {
     const authModal = useAuthModal();
     const router = useRouter(); //BTW we used useRouter in server component so we need to "use client"

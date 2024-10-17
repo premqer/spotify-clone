@@ -62,7 +62,7 @@ const UploadModal = () => {
                 .storage
                 .from('songs')
                 .upload(`song-${values.title}-${uniqueID}`, songFile, {
-                    cacheControl: '3600',
+                    cacheControl: '3600', // 3600
                     upsert: false
                 });
 
@@ -79,7 +79,7 @@ const UploadModal = () => {
                 .storage
                 .from('images')
                 .upload(`image-${values.title}-${uniqueID}`, imageFile, {
-                    cacheControl: '3600',
+                    cacheControl: '3600', // 3600
                     upsert: false
                 });
             
