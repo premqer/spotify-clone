@@ -34,8 +34,8 @@ const LikedContent: React.FC<LikedContentProps> = ({
                 px-6
                 text-neutral-400
             ">
-                No liked songs.
-            </div>
+                No liked songs. 
+            </div> // Rio de Janeiro
         )
     }
     return ( 
