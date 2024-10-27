@@ -115,7 +115,7 @@ const manageSubscriptionStatusChange = async (
   createAction = false
 ) => {
   const { data: customerData, error: noCustomerError } = await supabaseAdmin
-    .from("cusotmers")
+    .from("customers")
     .select("id")
     .eq("stripe_customer_id", customerId)
     .single();
