@@ -34,7 +34,7 @@ const upsertPriceRecord = async (price: Stripe.Price) => {
     id: price.id,
     product_id: typeof price.product === "string" ? price.product : "",
     active: price.active,
-    currecny: price.currency,
+    currency: price.currency,
     description: price.nickname ?? undefined,
     type: price.type,
     unit_amount: price.unit_amount ?? undefined,
